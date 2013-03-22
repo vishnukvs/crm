@@ -1,6 +1,6 @@
 body {
 	background-color: #FFFFFF;
-	background: url(../img/body-bg.jpg) repeat-x;
+/*	background: url(../img/body-bg.jpg) repeat-x;*/
 	
 }
 
@@ -41,9 +41,7 @@ body {
 	padding: 7px 9px;
 	}
 /** ###########Dashboard #######*/
-.dashboard{
-	margin-top: 120px;
-}
+
 
 
 
