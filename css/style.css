@@ -46,17 +46,11 @@ body {
 }
 
 
-
-
-
-
  .footer  {
         height: 60px;
         background-color: #f5f5f5;
       	bottom: 0;
       	position: absolute;
       	float:right;
+      	text-align: center;
     }
- .footer p{
- 	margin-left: 260px;
- }
