@@ -58,3 +58,7 @@ body {
 .wrapper{
  margin:0 0 0 30px;
 }
+#mypagi{
+	/*float:center;*/
+	margin-left: 300px;
+}
