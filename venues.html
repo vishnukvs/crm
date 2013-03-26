@@ -50,8 +50,83 @@
     <div class="row">
       <div class="span12">
         <h3>Venues:</h3>
+        <!--add venues-->
+        <div class="modal hide fade " id="addvenue">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Add Venue </h3>
+          </div>
+          <div class="modal-body">
+           <form class="form-horizontal" action="#" method="post" >
+            <div class="controls-group">
+              <label class="control-label"for="venuename">Venue Name</label>
+              <div class="controls">
+             <input type="text" name="venuename" id="venuename" placeholder="Enter venue name">
+              </div>
+            </div>
+             <div class="controls-group">
+             <label class="control-label" for="address">Address</label>
+              <div class="controls">
+               <input type="text" name="address" id="addr"placeholder="Enter address">
+              </div>
+             </div>
+             <div class="controls-group">
+             <label class="control-label" for="contact">Contact Person</label>
+              <div class="controls">
+               <input type="text" name="address" id="addr"placeholder="Enter contact person name">
+              </div>
+             </div>
+             <div class="controls-group">
+              <label class="control-label" for="venuename">Phone Number</label>
+              <div class="controls">
+               <input type="text" name="phonenumber" id="phno"placeholder="Enter main phone number">
+              </div>
+             </div>
+             <div class="controls-group">
+             <label class="control-label" for="contact">Fax</label>
+              <div class="controls">
+               <input type="text" name="address" id="addr"placeholder="Enter Fax">
+              </div>
+             </div>
+             <div class="controls-group">
+             <label class="control-label" for="contact">Mobile</label>
+              <div class="controls">
+               <input type="text" name="address" id="addr"placeholder="Enter Mobile Number">
+              </div>
+             </div>
+             <div class="controls-group">
+             <label class="control-label" for="contact">Email</label>
+              <div class="controls">
+               <input type="text" name="address" id="addr"placeholder="Enter Email">
+              </div>
+             </div>
+             <div class="controls-group">
+             <label class="control-label" for="contact">Website</label>
+              <div class="controls">
+               <input type="text" name="website" id="website"placeholder="Enter Website">
+              </div>
+             </div>
+             <div class="controls-group">
+             <label class="control-label" for="contact">Venu Floor Plan</label>
+              <div class="controls">
+               <input type="file" name="floorplan" id="fplan"placeholder="Enter contact person name">
+              </div>
+             </div>
+             <div class="controls-group">
+             <label class="control-label" for="contact">Notes</label>
+              <div class="controls">
+               <textarea rows="5"cols"15" style="resize:none"; placeholder="enter Notes"></textarea>
+              </div>
+             </div>
+         </form><!--/end of add venue form-->
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn" data-dismiss="modal">Close</a>
+            <a href="#" class="btn btn-primary">Create Venue</a>
+          </div>
+        </div><!--/end of add Venues-->
         <div class="add_venue">
-          <p><a href="#"class="btn btn-primary">Add Venues</a></p>
+          <p><a href="#addvenue"class="btn btn-primary">Add Venues</a></p>
        </div>
          <table class="table tablesorter table-bordered table-striped" id="myTable">
          <tr>
@@ -191,4 +266,10 @@
     </div>
  </footer>
  </body>
+ <script src="http://code.jquery.com/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/bootstrap-modal.js"></script>
+ <script type="text/javascript">
+ $('#addvenue').modal('show')
+  </script>
  </html>
