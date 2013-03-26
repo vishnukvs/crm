@@ -50,8 +50,22 @@
     <div class="row">
       <div class="span12">
         <h3>Venues:</h3>
+        <!--add venues-->
+        <div class="modal hide fade" id="addvenue">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Modal header</h3>
+          </div>
+          <div class="modal-body">
+            <p>One fine body…</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Save changes</a>
+          </div>
+        </div><!--/end of add Venues-->
         <div class="add_venue">
-          <p><a href="#"class="btn btn-primary">Add Venues</a></p>
+          <p><a href="#addvenue"class="btn btn-primary">Add Venues</a></p>
        </div>
          <table class="table tablesorter table-bordered table-striped" id="myTable">
          <tr>
@@ -191,4 +205,10 @@
     </div>
  </footer>
  </body>
+ <script src="http://code.jquery.com/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/bootstrap-modal.js"></script>
+ <script type="text/javascript">
+ $('#addvenue').modal('show')
+  </script>
  </html>
