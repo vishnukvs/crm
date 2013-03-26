@@ -43,9 +43,7 @@ body {
 .dashboard{
 	margin-top: 80px;
 }
-
-
- .footer  {
+ .footer {
         height: 60px;
         background-color: #f5f5f5;
       	bottom: 0;
@@ -54,11 +52,14 @@ body {
       	text-align: center;
     }
 /****############quotes######### **/
-
 .wrapper{
  margin:0 0 0 30px;
 }
 #mypagi{
 	/*float:center;*/
 	margin-left: 300px;
+}
+.register{
+	margin-left:200px;
+
 }
