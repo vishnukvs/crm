@@ -3,6 +3,9 @@ body {
 /*	background: url(../img/body-bg.jpg) repeat-x;*/
 	
 }
+table {
+	width: 80%;
+}
 
 .top-banner{
 	position: absolute;
