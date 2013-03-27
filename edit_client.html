@@ -62,12 +62,28 @@
              <input type="text"class="input-medium" name="username" readonly="true">
            </div>
          </div>
-          <div class="control-group">
+         <div class="control-group">
          <label class="control-label" for="password">Password</label>
         <div class="controls">
           <input type="text" class="input-medium" name="password">
           <button class="btn btn-danger">New Random Password</button>
           <button class="btn btn-success">Restore Password</button>
+        </div>
+      </div>
+      <div class="control-group" >
+        <label class="control-label"for="phone">Telephone</label>
+        <div class="controls"id="addphone">
+          <input type="text" class="input-medium" name="telephone" id="p_new">
+          <a href="#" class="btn btn-warning"  id="addNew">Add Another Number</a>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label"for="email">Email</label>
+        <div class="controls" id="addemail">
+         <P>
+          <input type="text" class="input-medium" name="email" id="e_email">
+          <a href="#"class="btn btn-warning" id="newemail">Add Email</a>
+        </P>
         </div>
       </div>
 
@@ -86,5 +102,30 @@
    </footer>
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+    var addDiv = $('#addphone');
+    var another =$('#addemail');
+    var i = $('#addphone p').size() + 1;
+   
+    $('#addNew').bind('click', function() {
+    $('<p><input type="text" class="input-medium"id="p_new" name="telephone' + i +'" value="" placeholder="Enter Number" />').appendTo(addDiv);
+    i++;
+    return false;
+    });
+   
+  });
+    $(function() {
+    var another =$('#addemail');
+    var i = $('#addemail p').size() + 1;
+     $('#newemail').bind('click', function() {
+    $('<p><input type="text" class="input-medium"id="p_new" name="email' + i +'" value="" placeholder="Enter email" />').appendTo(another);
+    i++;
+    return false;
+    });
+   
+  });
+
+</script>
 </body>
 </html>
