@@ -55,6 +55,9 @@ table {
       	text-align: center;
     }*/
 /****############quotes######### **/
+.torch{
+	padding-top: 100px;
+}
 .wrapper{
  margin:0 0 0 30px;
 }
@@ -72,10 +75,10 @@ table {
 }
 #editclient{
 	margin-left: 180px;
-	 padding: 0 20px 15px;
+	padding: 0 20px 15px;
   	-webkit-border-radius: 0 0 6px 6px;
   	-moz-border-radius: 0 0 6px 6px;
- 	 border-radius: 0 0 6px 6px;
+ 	border-radius: 0 0 6px 6px;
   	background-color: #eee;
  	background-image: -webkit-gradient(linear, center bottom, center top, from(#ddd), to(#eee));
   	background-image: -moz-linear-gradient(90deg, #ddd, #eee);
