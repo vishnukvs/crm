@@ -105,22 +105,22 @@
     </div>
     <div class="control-group">
      <div class="controls">
-       <button type="submit" class="btn btn-primary">Update Client</button>
+       <button type="submit"class="btn btn-primary">Update Client</button>
       </div>
-     </div>
+    </div>
  </fieldset> 
  </form><!--/end of form-->
   </div>
   </div>
-</div><!--/end of wrapper-->
+  </div><!--/end of wrapper-->
   <footer>
       <div class="footer span12">
         <p >&copy;2013 Holmusic | All Rights Reserved </p>
       </div>
    </footer>
-  <script src="http://code.jquery.com/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
+   <script src="http://code.jquery.com/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript">
     $(function() {
     var addDiv = $('#addphone');
     var i = $('#addphone p').size() + 1;
@@ -141,6 +141,14 @@
     });
    
   });
+  $('#fat-btn')
+      .click(function () {
+        var btn = $(this)
+        btn.button('loading')
+        setTimeout(function () {
+          btn.button('reset')
+        }, 3000)
+      })
 
 </script>
 </body>

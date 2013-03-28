@@ -1,39 +1,49 @@
+ <!DOCTYPE html>
 <html>
 <head>
-<title> Dynamically create input fields- jQuery </title>
-<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>        // Calling jQuery Library hosted on Google's CDN
-      <script type="text/javascript">
-      $(function() {
-      var addDiv = $('#addinput');
-      var i = $('#addinput p').size() + 1;
-
-      $('#addNew').live('click', function() {
-      $('<p><input type="text" id="p_new" size="40" name="p_new_' + i +'" value="" placeholder="I am New" /><a href="#" id="remNew">Remove</a> </p>').appendTo(addDiv);
-      i++;
-
-      return false;
-      });
-
-      $('#remNew').live('click', function() {
-      if( i > 2 ) {
-      $(this).parents('p').remove();
-      i--;
-      }
-      return false;
-      });
-      });
-
-      </script>
-
-      </head>
-      <body>
-      <h2>Dynammically Add Another Input Box</h2>
-
-      <div id="addinput">
-      <p>
-      <input type="text" id="p_new" size="20" name="p_new" value="" placeholder="Input Value" /><a href="#" id="addNew">Add</a>
-      </p>
-      </div>
+<meta charset="utf-8" />
+<title>Example of Bootstrap Button JavaScript Plugin</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="span8">
+<h2>Example of Bootstrap Button JavaScript Plugin</h2>
+<h3>Control state</h3>
+<p><button id="fat-btn" data-loading-text="loading..." class="btn btn-primary">Loading State</button></p>
+<h3>Single toggle</h3>
+<p><button class="btn btn-primary" data-toggle="button">Single Toggle</button></p>
+<h3>Checkbox</h3>
+<p><div class="btn-group" data-toggle="buttons-checkbox">
+                    <button class="btn btn-primary">Left</button>
+                    <button class="btn btn-primary">Middle</button>
+                    <button class="btn btn-primary">Right</button>
+    </div></p>
+<h3>Radio</h3>
+<p><div class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn btn-primary">Left</button>
+                    <button class="btn btn-primary">Middle</button>
+                    <button class="btn btn-primary">Right</button>
+                  </div></p>
+</div>
+</div>
+</div>
+<!--Except  'Control state', other buttons require only jquery.js and bootstrap-button.js JavaScript files-->                   
+ <script src="http://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-alert.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-modal.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-scrollspy.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-tab.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-tooltip.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-popover.js"></script>
+<script src="/js/bootstrap-button.js"></script>
+<script src="/js/bootstrap-carousel.js"></script>
+<script src="/js/bootstrap-typeahead.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/application.js"></script>
 
 </body>
 </html>
+            
