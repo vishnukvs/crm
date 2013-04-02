@@ -69,11 +69,12 @@ table {
 	margin-left:200px;
 
 }
-.add_venue{
-	float:right;
 
+.side_button{
+	float:right;
 }
-#editclient{
+
+.myform{
 	margin-left: 180px;
 	padding: 0 20px 15px;
   	-webkit-border-radius: 0 0 6px 6px;
@@ -85,8 +86,7 @@ table {
   	-webkit-box-shadow: 0 5px 20px #999;
   	-moz-box-shadow: 0 5px 20px #999;
   	box-shadow: 0 5px 20px #999;
-
 }
-#editclient label{
+.myform label{
 	text-align: right;
 }
