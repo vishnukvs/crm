@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <title>Holt's Music </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-editor.css" rel="stylesheet" media="screen">
+  <link href="css/prettify.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  <header>
+    <div class="row">
+     <div class="span12">
+      <div class="top-banner">
+      </div>
+    </div><!--/end of span12-->
+  </div><!--/end of row-->
+</header>
+<div class="dashboard">
+  <div class="navbar navbar-inverse navbar-fixed">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li class="active"><a href="#"><i class="icon-home "></i>Home</a></li>
+          <li><a href="#">Quotes</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Venues</a></li>
+          <li><a href="#">Expos</a></li>
+          <li><a href="#"><i class="icon-envelope icon-white"></i>Email</a></li>
+        </ul>
+        <form class="navbar-search pull-left">
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
+        <ul class="nav secondary-nav pull-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-off icon-white"></i> Admin<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Logout</a>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div><!--end of nav bar-->
+    </div><!--end of dashboard-->
+    <div class="wrapper">
+      <div class="row">
+        <div class="span12">
+          <div class="myform">
+           <h3>Create an Email Template</h3>
+           <form class="form-horizontal"action="#"method="post">
+            <div class="control-group">
+              <label class="control-label"for="template_title">Template Title</label>
+              <div class="controls">
+                <input type="text"class="input-large" name="template_title"placeholder="Enter a Title">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="subject">Subject</label>
+              <div class="controls">
+               <input type="text"class="input-large" name="subject"placeholder="Enter Template Subject">
+             </div>
+           </div>
+           <div class="control-group">
+             <div class="controls">
+              <textarea class="textarea" style="width: 610px; height: 200px"></textarea>
+            </div>
+          </div>
+          <div class="controls">
+            <button class="btn btn-success" type="submit">Save Template</button>
+          </div>
+        </form>
+      </div>
+    </div><!--end of span12-->
+  </div><!--end of row-->
+</div><!--/end of wrapper-->
+<script src="js/wysihtml5-0.3.0.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap-wysihtml5.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prettify.js"></script>
+<script>
+$('.textarea').wysihtml5();
+</script>
+<script type="text/javascript" charset="utf-8">
+$(prettyPrint);
+</script>
+
+
+</body>
+</html>
