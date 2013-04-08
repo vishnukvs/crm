@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Holt's Music </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
-   </head>
-  <body>
-    <header>
-      <div class="row">
-       <div class="span12">
+<head>
+  <title>Holt's Music </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  <header>
+    <div class="row">
+     <div class="span12">
       <div class="top-banner">
       </div>
     </div><!--/end of span12-->
-    </div><!--/end of row-->
-  </header>
-  <div class="dashboard">
-      <div class="navbar navbar-inverse navbar-fixed">
-        <div class="navbar-inner">
-          <div class="container">
-            <ul class="nav">
-              <li class="active"><a href="#"><i class="icon-home "></i>Home</a></li>
-                <li><a href="#">Quotes</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Clients</a></li>
-                <li><a href="#">Venues</a></li>
-                <li><a href="#">Expos</a></li>
-                <li><a href="#"><i class="icon-envelope icon-white"></i>Email</a></li>
-           </ul>
-            <form class="navbar-search pull-left">
-            <input type="text" class="search-query" placeholder="Search">
-            </form>
-              <ul class="nav secondary-nav pull-right">
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-off icon-white"></i> Admin<b class="caret"></b></a>
-                   <ul class="dropdown-menu">
-                      <li><a href="#">Logout</a></li>
-                  </ul>
-              </ul>
-          </div>
+  </div><!--/end of row-->
+</header>
+<div class="dashboard">
+  <div class="navbar navbar-inverse navbar-fixed">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li class="active"><a href="#"><i class="icon-home "></i>Home</a></li>
+          <li><a href="#">Quotes</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Venues</a></li>
+          <li><a href="#">Expos</a></li>
+          <li><a href="#"><i class="icon-envelope icon-white"></i>Email</a></li>
+        </ul>
+        <form class="navbar-search pull-left">
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
+        <ul class="nav secondary-nav pull-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-off icon-white"></i> Admin<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </ul>
         </div>
-      </div><!--end of nav bar-->
+      </div>
+    </div><!--end of nav bar-->
   </div><!--end of dashboard-->
   <div class="wrapper">
-  <div class="row">
-    <div class="span12">
+    <div class="row">
+      <div class="span12">
        <form class="form-horizontal myform" action="#" method="post">
          <h3>Please Edit client here </h3>
-        <fieldset>
+         <fieldset>
           <div class="control-group">
             <label class="control-label" for="displayname">Display Name</label>
-             <div class="controls">
+            <div class="controls">
               <input type="text" class="input-medium" name="displayname">
-          </div>
+            </div>
           </div>
           <div class="control-group">
             <label class="control-label"for="username">User Name</label>
-           <div class="controls">
+            <div class="controls">
              <input type="text"class="input-medium" name="username" readonly="true">
            </div>
          </div>
          <div class="control-group">
-         <label class="control-label" for="password">Password</label>
-        <div class="controls">
-          <input type="text" class="input-medium" name="password">
-          <button class="btn btn-danger">New Random Password</button>
-          <button class="btn btn-success">Restore Password</button>
+           <label class="control-label" for="password">Password</label>
+           <div class="controls">
+            <input type="text" class="input-medium" name="password">
+            <button class="btn btn-danger">New Random Password</button>
+            <button class="btn btn-success">Restore Password</button>
+          </div>
         </div>
-      </div>
-      <div class="control-group" >
-        <label class="control-label"for="phone">Telephone</label>
-        <div class="controls"id="addphone">
-          <input type="text" class="input-medium" name="telephone" id="p_new">
-          <a href="#" class="btn btn-warning"  id="addNew">Add Another Number</a>
+        <div class="control-group" >
+          <label class="control-label"for="phone">Telephone</label>
+          <div class="controls"id="addphone">
+            <input type="text" class="input-medium" name="telephone" id="p_new">
+            <a href="#" class="btn btn-warning"  id="addNew">Add Another Number</a>
+          </div>
         </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label"for="email">Email</label>
-        <div class="controls" id="addemail">
-         <P>
-          <input type="text" class="input-medium" name="email" id="e_email">
-          <a href="#"class="btn btn-warning" id="newemail">Add Email</a>
-        </P>
+        <div class="control-group">
+          <label class="control-label"for="email">Email</label>
+          <div class="controls" id="addemail">
+           <P>
+            <input type="text" class="input-medium" name="email" id="e_email">
+            <a href="#"class="btn btn-warning" id="newemail">Add Email</a>
+          </P>
         </div>
       </div>
       <div class="control-group">
@@ -97,51 +97,51 @@
         </select>
       </div>
     </div>
-      <div class="control-group">
-       <label class="control-label" for="notes">Notes</label>
-       <div class="controls">
-        <textarea rows="10" cols="15" style="resize:none;" Placeholder="add notes"></textarea>
-      </div>
-    </div>
     <div class="control-group">
+     <label class="control-label" for="notes">Notes</label>
      <div class="controls">
-       <button type="submit"class="btn btn-primary">Update Client</button>
-      </div>
+      <textarea rows="10" cols="15" style="resize:none;" Placeholder="add notes"></textarea>
     </div>
- </fieldset> 
- </form><!--/end of form-->
   </div>
+  <div class="control-group">
+   <div class="controls">
+     <button type="submit"class="btn btn-primary">Update Client</button>
+   </div>
+ </div>
+</fieldset> 
+</form><!--/end of form-->
+</div>
+</div>
+</div><!--/end of wrapper-->
+<footer>
+  <div class="footer span12">
+    <p >&copy;2013 Holmusic | All Rights Reserved </p>
   </div>
-  </div><!--/end of wrapper-->
-  <footer>
-      <div class="footer span12">
-        <p >&copy;2013 Holmusic | All Rights Reserved </p>
-      </div>
-   </footer>
-   <script src="http://code.jquery.com/jquery.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script type="text/javascript">
-    $(function() {
-    var addDiv = $('#addphone');
-    var i = $('#addphone p').size() + 1;
-    $('#addNew').bind('click', function() {
+</footer>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  var addDiv = $('#addphone');
+  var i = $('#addphone p').size() + 1;
+  $('#addNew').bind('click', function() {
     $('<p><input type="text" class="input-medium"id="p_new" name="telephone' + i +'" value="" placeholder="Enter Number" />').appendTo(addDiv);
     i++;
     return false;
-    });
-   
   });
-    $(function() {
-    var another =$('#addemail');
-    var i = $('#addemail p').size() + 1;
-     $('#newemail').bind('click', function() {
+  
+});
+$(function() {
+  var another =$('#addemail');
+  var i = $('#addemail p').size() + 1;
+  $('#newemail').bind('click', function() {
     $('<p><input type="text" class="input-medium"id="p_new" name="email' + i +'" value="" placeholder="Enter email" />').appendTo(another);
     i++;
     return false;
-    });
-   
   });
   
+});
+
 
 </script>
 </body>
