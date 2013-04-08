@@ -47,25 +47,37 @@
     </div>
   </div><!--end of nav bar-->
 </div><!--end of dashboard-->
-<div class="container">
+<div class="wrapper">
   <div class="row">
-   <div class="span8">
-    <table class="table table-bordered table-striped">
-     <tr>
-      <th>Subject</th>
-      <th>Sender</th>
-      <th>Sent When?</th>
-    </tr> 
-    <tr>
-      <td>Test</td>
-      <td>Admin</td>
-      <td>28/03/2013</td>
-    </tr>
-  </table>
-  <a href="edit_client.html"class="btn">Back to Client Page</a>
-</div>
-</div>
-</div>
+    <div class="span12">
+      <table class="table table-bordered table-striped">
+      <tr>
+        <th>Expo Date</th>
+        <th>Expo Name</th>
+        <th>Location</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>8/04/2013</td>
+        <td>DJ Expo Meet</td>
+        <td>Melbourne</td>
+        <td><a class="btn btn-success" href="#">
+            <i class="icon-zoom-in icon-white"></i>    View                                            
+          </a>
+          <a class="btn btn-info" href="#">
+            <i class="icon-edit icon-white"></i>  
+            Edit                                            
+          </a>
+          <a class="btn btn-danger" href="#">
+            <i class="icon-trash icon-white"></i> 
+            Delete
+          </a>
+        </td>
+      </tr>
+      </table>
+    </div>
+  </div><!--/end of span12-->
+</div><!--/end of wrapper-->
 <footer>
   <div class="footer span7">
     <p >&copy;2013 Holmusic | All Rights Reserved </p>
@@ -75,4 +87,3 @@
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-

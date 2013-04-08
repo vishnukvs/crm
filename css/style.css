@@ -47,15 +47,13 @@ table {
 	margin-top: 80px;
 }
  .footer {
+       	bottom: 0;
+        position: absolute;
         background-color: #f5f5f5;
-      	bottom: 0;
       	float:right;
       	text-align: center;
     }
 /****############quotes######### **/
-.torch{
-	padding-top: 100px;
-}
 .wrapper{
  margin:0 0 0 30px;
 }

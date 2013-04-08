@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+  <title>Holt's Music </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+ <header>
+  <div class="row">
+    <div class="span12">
+      <div class="top-banner">
+      </div>
+    </div><!--/end of span12-->
+  </div><!--/end of row-->
+</header>
+<!-- top menu bar-->
+<div class="dashboard">
+ <div class="navbar navbar-inverse navbar-fixed">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li class="active"><a href="dashboard.html"><i class="icon-home "></i>Home</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="venues.html">Venues</a></li>
+        <li><a href="expos.html">Expos</a></li>
+        <li><a href="emails.html"><i class="icon-envelope icon-white"></i>Email</a></li>
+      </ul>
+      <form class="navbar-search pull-left">
+        <input type="text" class="search-query" placeholder="Search">
+      </form>
+      <ul class="nav secondary-nav pull-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user icon-white"></i> Admin<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="icon-wrench"></i>  Setup</a></li>
+            <div class="divider">
+            </div>
+            <li><a href="#"><i class="icon-off"></i>  Logout</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div><!--end of nav bar-->
+</div><!--end of dashboard-->
+<div class="wrapper">
+  <div class="row">
+   <div class="span12">
+    <div class="myform">
+     <h3>Client Management</h3>
+     <div class="side_button">
+      <p><a href="#" class="btn btn-primary">Add new User</a></p>
+    </div>
+    <h5>Active Clients</h5>
+    <table class="table  table-bordered table-striped">
+      <tr>
+        <th>Name</th>
+        <th>Actions</th> 
+      </tr>
+      <tr>
+        <td>Booked Bartercard</td>
+        <td>
+          <a class="btn btn-info" href="#">
+            <i class="icon-envelope icon-white"></i>  
+            Email                                            
+          </a>
+          <a class="btn btn-info" href="#">
+            <i class="icon-edit icon-white"></i>  
+            Edit                                            
+          </a>
+          <a class="btn btn-danger" href="#">
+            <i class="icon-trash icon-white"></i> 
+            DeActivate
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Booked Party</td>
+        <td>
+          <a class="btn btn-info" href="#">
+            <i class="icon-envelope icon-white"></i>  
+            Email                                            
+          </a>
+          <a class="btn btn-info" href="#">
+            <i class="icon-edit icon-white"></i>  
+            Edit                                            
+          </a>
+          <a class="btn btn-danger" href="#">
+            <i class="icon-trash icon-white"></i> 
+            DeActivate
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Booked Wedding</td>
+        <td>
+          <a class="btn btn-info" href="#">
+            <i class="icon-envelope icon-white"></i>  
+            Email                                            
+          </a>
+          <a class="btn btn-info" href="#">
+            <i class="icon-edit icon-white"></i>  
+            Edit                                            
+          </a>
+          <a class="btn btn-danger" href="#">
+            <i class="icon-trash icon-white"></i> 
+            DeActivate
+          </a>
+        </td>
+      </tr>
+    </table>
+    <h5>Inactive Clients</h5>
+    <table class="table  table-condensed table-bordered table-striped">
+      <tr>
+        <th>Name</th>
+        <th>Access Level</th> 
+        <th>Actions</th> 
+      </tr>
+      <tr>
+        <td>Corinne McPherson</td>
+        <td>Client</td> 
+        <td>
+          <a class="btn btn-info" href="#">
+            <i class="icon-envelope icon-white"></i>  
+            Email                                            
+          </a>
+          <a class="btn btn-info" href="#">
+            <i class="icon-edit icon-white"></i>  
+            Edit                                            
+          </a>
+          <a class="btn btn-success" href="#">
+            <i class="icon-ok icon-white"></i> 
+            Activate
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>James Paterson</td>
+        <td>Dj</td> 
+        <td>
+          <a class="btn btn-info" href="#">
+            <i class="icon-envelope icon-white"></i>  
+            Email                                            
+          </a>
+          <a class="btn btn-info" href="#">
+           <i class="icon-edit icon-white"></i>  
+           Edit                                            
+         </a>
+         <a class="btn btn-success" href="#">
+          <i class="icon-ok icon-white"></i> 
+          Activate
+        </a>
+      </td>
+    </tr>
+  </div>
+</div><!--/span12-->
+</div><!--/end of row-->
+</div>
+<footer>
+  <div class="footer span7">
+    <p >&copy;2013 Holmusic | All Rights Reserved </p>
+  </div>
+</footer>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
