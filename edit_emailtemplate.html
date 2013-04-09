@@ -47,36 +47,36 @@
     </div>
   </div><!--end of nav bar-->
 </div><!--end of dashboard-->
-<div class="wrapper">
-  <div class="row">
-    <div class="span12">
-      <div class="myform">
-       <h3>Create an Email Template</h3>
-       <form class="form-horizontal"action="#"method="post">
-        <div class="control-group">
-          <label class="control-label"for="template_title">Template Title</label>
-          <div class="controls">
-            <input type="text"class="input-large" name="template_title"placeholder="Enter a Title">
+    <div class="wrapper">
+      <div class="row">
+        <div class="span12">
+          <div class="myform">
+           <h3>Edit an Email Template</h3>
+           <form class="form-horizontal"action="#"method="post">
+            <div class="control-group">
+              <label class="control-label"for="template_title">Template Title</label>
+              <div class="controls">
+                <input type="text"class="input-large" name="template_title"placeholder="Enter a Title">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="subject">Subject</label>
+              <div class="controls">
+               <input type="text"class="input-large" name="subject"placeholder="Enter Template Subject">
+             </div>
+           </div>
+           <div class="control-group">
+             <div class="controls">
+              <textarea id="elm1"rows="10"cols="55"class="tinymce"style="width:80%; "></textarea>
+            </div>
           </div>
-        </div>
-        <div class="control-group">
-          <label class="control-label" for="subject">Subject</label>
           <div class="controls">
-           <input type="text"class="input-large" name="subject"placeholder="Enter Template Subject">
-         </div>
-       </div>
-       <div class="control-group">
-         <div class="controls">
-          <textarea id="elm1"rows="10"cols="55"class="tinymce"style="width:80%; "></textarea>
-        </div>
+            <button class="btn btn-success" type="submit">Save Template</button>
+          </div>
+        </form>
       </div>
-      <div class="controls">
-        <button class="btn btn-success" type="submit">Save Template</button>
-      </div>
-    </form>
-  </div>
-</div><!--end of span12-->
-</div><!--end of row-->
+    </div><!--end of span12-->
+  </div><!--end of row-->
 </div><!--/end of wrapper-->
 <footer>
   <div class="footer span7">
@@ -86,9 +86,9 @@
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.tinymce.js"></script>
-<script type="text/javascript">
-$().ready(function() {
-  $('textarea.tinymce').tinymce({
+  <script type="text/javascript">
+  $().ready(function() {
+    $('textarea.tinymce').tinymce({
       // Location of TinyMCE script
       script_url : './js/tiny_mce.js',
 
@@ -115,13 +115,10 @@ $().ready(function() {
       external_image_list_url : "lists/image_list.js",
       media_external_list_url : "lists/media_list.js",
 
-      // Replace values for the template plugin
-      template_replace_values : {
-        username : "vishnukvs",
-        staffid : "001"
-      }
+      
+    
     });
-});
+  });
 </script>
 </body>
 </html>
