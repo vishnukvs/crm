@@ -14,14 +14,49 @@
 	      <div class="span6">Level 2</div>
 	      <div class="span3">Level 2</div>
 	    </div>
+	     <div class="tab-pane" id="cal">
+	     	in the calender
+                            <script type="text/x-handlebars">
+                                {{#view App.CalendarTool id="calendar"}}{{/view}}
+                            </script>
 	  </div>
 	</div>
 </div>
 <script src="http://code.jquery.com/jquery.js"></script>
-<script src="/js/bootstrap-transition.js"></script>
-<script src="/js/bootstrap-button.js"></script>
-<script src="/js/bootstrap-carousel.js"></script>
-<script src="/js/bootstrap-typeahead.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+<script>
+App = Ember.Application.create();
+
+App.CalendarTool = Em.View.extend({
+    tagName: 'div',
+    attributeBindings: ['id', 'events', 'owner'],
+    classNamesBindings: ['class'],
+    didInsertElement: function() {
+
+        this.$().fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay '
+            },
+            editable: true,
+            events: []
+        });
+
+    }
+
+});
+
+$('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+    $('#calendar').fullCalendar('render');
+})
+
+</script>
 </body>
 </html>
             
